@@ -1,9 +1,13 @@
 ---
 title: 组件
+group:
+  title: 组件
 nav:
   title: 组件
   path: /components
 ---
+
+# {{{ componentName }}}
 
 ### 展示
 

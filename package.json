@@ -1,5 +1,5 @@
 {
-  "name": "template",
+  "name": "@umijs/template",
   "version": "0.1.0",
   "main": "lib/index.js",
   "description": "创建charts模板",
@@ -7,12 +7,13 @@
     "create-charts": "./lib/index.js"
   },
   "authors": {
-    "name": "LimMem",
+    "name": "qclong",
     "email": "1270253618@qq.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hammersjs/component-generator.git"
+    "url": "https://github.com/hammersjs/component-generator.git",
+    "branch": "master"
   },
   "scripts": {
     "start": "cross-env APP_ROOT=example umi dev",
@@ -21,8 +22,8 @@
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
     "test:update": "umi-test --updateSnapshot",
-    "start:charts": "father-build && cd ./example && umi g charts ComponentsName",
-    "start:charts:Sub": "father-build && cd ./example && alita g charts CName c"
+    "temp:chart": "father-build && cd ./example && umi g charts ComponentsName",
+    "temp:subchart": "father-build && cd ./example && alita g charts CName c"
   },
   "lint-staged": {
     "*.ts?(x)": [
@@ -33,6 +34,10 @@
       "prettier --write",
       "git add"
     ]
+  },
+  "dependencies": {
+    "@babel/helper-create-class-features-plugin": "^7.13.10",
+    "umi": "3.3.7"
   },
   "devDependencies": {
     "@testing-library/react": "^9.4.0",
@@ -56,7 +61,6 @@
     "react-dom": "^16.12.0",
     "react-test-renderer": "^16.9.0",
     "test-umi-plugin": "^0.1.0",
-    "umi": "^3.1.0",
     "yorkie": "^2.0.0"
   },
   "gitHooks": {
